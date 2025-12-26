@@ -1,0 +1,25 @@
+{
+  "categories": [
+    { "id": 1, "name": "Dental Supplies", "type": "expense", "taxCode": "Schedule C / 1120S" },
+    { "id": 2, "name": "Lab Fees", "type": "expense", "taxCode": "Cost of Goods Sold" },
+    { "id": 3, "name": "Continuing Education", "type": "expense", "taxCode": "Professional Dev" },
+    { "id": 4, "name": "S-Corp Payroll", "type": "expense", "taxCode": "Officer Compensation" },
+    { "id": 5, "name": "Clinical Income", "type": "income", "taxCode": "Gross Receipts" }
+  ],
+  "mockTransactions": [
+    {
+      "date": "2025-12-01",
+      "description": "Henry Schein - Composites",
+      "amount": 450.00,
+      "categoryId": 1,
+      "status": "cleared"
+    },
+    {
+      "date": "2025-12-05",
+      "description": "Glidewell - Crown #19",
+      "amount": 189.00,
+      "categoryId": 2,
+      "status": "pending"
+    }
+  ]
+}
