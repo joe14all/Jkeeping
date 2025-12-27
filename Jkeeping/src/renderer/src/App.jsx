@@ -1,27 +1,19 @@
-import { useApp } from './context/AppContext';
+import React from 'react';
+import AppRouter from './router';
+import { AppProvider } from './context/AppContext';
 import './styles/globals.css';
 
+/**
+ * App.jsx - The Entry Point of Jkeeping
+ * * We wrap the entire application in the AppProvider to ensure that
+ * theme control and fiscal year state are accessible in every component.
+ * The AppRouter then takes over to handle the Layout and Page navigation.
+ */
 function App() {
-  const { theme, toggleTheme, fiscalYear } = useApp();
-
   return (
-    <div className="app-container">
-      <header style={{ padding: '20px', display: 'flex', justifyContent: 'space-between' }}>
-        <h1>Jkeeping {fiscalYear}</h1>
-        <button onClick={toggleTheme}>
-          Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
-        </button>
-      </header>
-
-      <main style={{ padding: '20px' }}>
-        <div className="card">
-          <h2>S-Corp Dashboard</h2>
-          <p style={{ color: 'var(--text-secondary)' }}>
-            Welcome, Doctor. Your local data is secure.
-          </p>
-        </div>
-      </main>
-    </div>
+    <AppProvider>
+      <AppRouter />
+    </AppProvider>
   );
 }
 

@@ -1,0 +1,44 @@
+.appShell {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+  /* Use the system font stack defined in globals.css */
+  font-family: var(--font-main);
+}
+
+.mainContent {
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  /* Smooth scrolling for macOS feel */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  min-height: 100%;
+}
+
+/* Scrollbar styling for a cleaner look in Electron/Chrome */
+.mainContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mainContent::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mainContent::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+.mainContent::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}

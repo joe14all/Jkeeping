@@ -1,0 +1,43 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: rgba(var(--bg-secondary-rgb), 0.8);
+  backdrop-filter: blur(20px);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-left: 12px;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, var(--accent), #5AC8FA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: var(--text-primary);
+  text-decoration: none;
+  margin-bottom: 4px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.active {
+  background: rgba(0, 113, 227, 0.1);
+  color: var(--accent);
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
