@@ -23,6 +23,12 @@
   margin-bottom: 40px;
 }
 
+.headerActions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 .titleGroup h1 {
   font-size: 2.2rem;
   font-weight: 800;
@@ -111,4 +117,14 @@
 .bad {
   color: #FF3B30;
   font-weight: 700;
+}
+
+.note {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-style: italic;
 }

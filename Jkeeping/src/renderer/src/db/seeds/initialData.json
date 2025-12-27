@@ -1,25 +1,64 @@
 {
   "categories": [
-    { "id": 1, "name": "Dental Supplies", "type": "expense", "taxCode": "Schedule C / 1120S" },
-    { "id": 2, "name": "Lab Fees", "type": "expense", "taxCode": "Cost of Goods Sold" },
-    { "id": 3, "name": "Continuing Education", "type": "expense", "taxCode": "Professional Dev" },
-    { "id": 4, "name": "S-Corp Payroll", "type": "expense", "taxCode": "Officer Compensation" },
-    { "id": 5, "name": "Clinical Income", "type": "income", "taxCode": "Gross Receipts" }
+    { "id": 1, "name": "Practice Payment", "type": "income", "taxCode": "Gross Receipts" },
+    { "id": 2, "name": "Officer Salary (W-2)", "type": "expense", "taxCode": "Officer Compensation" },
+    { "id": 3, "name": "Continuing Education", "type": "expense", "taxCode": "Education" },
+    { "id": 4, "name": "Professional Licenses", "type": "expense", "taxCode": "Licenses & Permits" },
+    { "id": 5, "name": "Professional Liability Insurance", "type": "expense", "taxCode": "Insurance" },
+    { "id": 6, "name": "Office Rent", "type": "expense", "taxCode": "Rent" },
+    { "id": 7, "name": "Office Supplies", "type": "expense", "taxCode": "Supplies" },
+    { "id": 8, "name": "Accounting & Legal", "type": "expense", "taxCode": "Professional Services" },
+    { "id": 9, "name": "Business Travel", "type": "expense", "taxCode": "Travel" },
+    { "id": 10, "name": "Marketing & Advertising", "type": "expense", "taxCode": "Advertising" },
+    { "id": 11, "name": "Internet & Phone", "type": "expense", "taxCode": "Utilities" },
+    { "id": 12, "name": "Software & Subscriptions", "type": "expense", "taxCode": "Software" },
+    { "id": 13, "name": "Equipment Purchase", "type": "expense", "taxCode": "Equipment" },
+    { "id": 14, "name": "Meals & Entertainment", "type": "expense", "taxCode": "Meals (50% deductible)" },
+    { "id": 15, "name": "Health Insurance Premium", "type": "expense", "taxCode": "Insurance" }
+  ],
+  "practices": [
+    { "id": 1, "name": "Main Practice Location", "address": "123 Main St", "city": "San Francisco", "state": "CA", "zip": "94102", "tin": "12-3456789", "isActive": true }
   ],
   "mockTransactions": [
     {
       "date": "2025-12-01",
-      "description": "Henry Schein - Composites",
-      "amount": 450.00,
+      "description": "Payment from Main Practice - November Services",
+      "amount": 12500.00,
       "categoryId": 1,
-      "status": "cleared"
+      "practiceId": 1,
+      "type": "income",
+      "status": "cleared",
+      "reconciled": true
     },
     {
       "date": "2025-12-05",
-      "description": "Glidewell - Crown #19",
-      "amount": 189.00,
+      "description": "Monthly Officer Salary",
+      "amount": 6000.00,
       "categoryId": 2,
-      "status": "pending"
+      "practiceId": 1,
+      "type": "expense",
+      "status": "cleared",
+      "reconciled": true
+    },
+    {
+      "date": "2025-12-10",
+      "description": "Professional Liability Insurance - Annual",
+      "amount": 2400.00,
+      "categoryId": 5,
+      "practiceId": 1,
+      "type": "expense",
+      "status": "cleared",
+      "reconciled": true
+    },
+    {
+      "date": "2025-12-15",
+      "description": "Payment from Main Practice - Mid-month",
+      "amount": 8000.00,
+      "categoryId": 1,
+      "practiceId": 1,
+      "type": "income",
+      "status": "cleared",
+      "reconciled": false
     }
   ]
 }

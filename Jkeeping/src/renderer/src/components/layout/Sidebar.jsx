@@ -31,22 +31,28 @@ const Sidebar = () => {
             className={styles.select}
           >
             {years.map(y => (
-              <option key={y} value={y}>{y} Fiscal Year</option>
+              <option key={y} value={y}>{y}</option>
             ))}
           </select>
         </div>
       </div>
 
       <nav className={styles.nav}>
-        <label className={styles.label}>Menu</label>
+        <label className={styles.label}>Navigation</label>
         <NavLink to="/" className={({ isActive }) => isActive ? styles.active : styles.link}>
-          <span className={styles.icon}>📊</span> Dashboard
+          <span className={styles.icon}>🏠</span> Home
         </NavLink>
-        <NavLink to="/transactions" className={({ isActive }) => isActive ? styles.active : styles.link}>
-          <span className={styles.icon}>💸</span> Transactions
+        <NavLink to="/income" className={({ isActive }) => isActive ? styles.active : styles.link}>
+          <span className={styles.icon}>💰</span> Income
+        </NavLink>
+        <NavLink to="/expenses" className={({ isActive }) => isActive ? styles.active : styles.link}>
+          <span className={styles.icon}>💳</span> Expenses
         </NavLink>
         <NavLink to="/reports" className={({ isActive }) => isActive ? styles.active : styles.link}>
-          <span className={styles.icon}>📈</span> Reports
+          <span className={styles.icon}>📊</span> Reports
+        </NavLink>
+        <NavLink to="/tax-planning" className={({ isActive }) => isActive ? styles.active : styles.link}>
+          <span className={styles.icon}>📋</span> Tax Planning
         </NavLink>
         <NavLink to="/settings" className={({ isActive }) => isActive ? styles.active : styles.link}>
           <span className={styles.icon}>⚙️</span> Settings

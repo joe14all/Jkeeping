@@ -1,0 +1,420 @@
+.container {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.titleGroup h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.quarterSelector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.quarterLabel {
+  font-weight: 600;
+  color: #1f2937;
+  margin-right: 8px;
+}
+
+.quarterBtn {
+  padding: 10px 20px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quarterBtn:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.quarterBtn.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.estimateGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.totalCard {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  color: white;
+}
+
+.totalLabel {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.totalValue {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.totalDue {
+  font-size: 16px;
+  margin-bottom: 24px;
+  opacity: 0.95;
+}
+
+.safeHarborCard {
+  background: white;
+  border: 2px solid #3b82f6;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.safeHarborText {
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.safeHarborList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.safeHarborList li {
+  padding: 12px 16px;
+  background: #eff6ff;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #1e40af;
+}
+
+.safeHarborResult {
+  background: #dbeafe;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.safeHarborLabel {
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.safeHarborAmount {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e40af;
+}
+
+.compensationCard {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.compensationIntro {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.compensationRanges {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.rangeItem {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.rangeItem.recommended {
+  background: #ecfdf5;
+  border-color: #10b981;
+  transform: scale(1.05);
+}
+
+.rangeLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.rangeValue {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #10b981;
+  color: white;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.savingsCard {
+  background: #f0fdf4;
+  border: 2px solid #10b981;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.savingsLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #065f46;
+  margin-bottom: 12px;
+}
+
+.savingsValue {
+  font-size: 36px;
+  font-weight: 800;
+  color: #10b981;
+  margin-bottom: 12px;
+}
+
+.savingsNote {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.qbiCard {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.qbiRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 16px;
+}
+
+.qbiRow:last-of-type {
+  border-bottom: none;
+}
+
+.qbiRow.highlight {
+  background: #fef3c7;
+  margin: 16px -16px 16px -16px;
+  padding: 20px 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.qbiValue {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.qbiNote {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-top: 16px;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.calendarItem {
+  background: white;
+  border: 2px solid #3b82f6;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.calendarItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
+}
+
+.calendarItem.past {
+  opacity: 0.5;
+  border-color: #d1d5db;
+}
+
+.calendarDate {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 8px;
+}
+
+.calendarType {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.calendarForm {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.calendarQuarter {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.resources {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 16px;
+  padding: 32px;
+  color: white;
+}
+
+.resources .sectionTitle {
+  color: white;
+}
+
+.resourceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.resourceCard {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.resourceCard:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-4px);
+}
+
+.resourceIcon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.resourceTitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.resourceText {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .compensationRanges {
+    grid-template-columns: 1fr;
+  }
+
+  .rangeItem.recommended {
+    transform: none;
+  }
+}

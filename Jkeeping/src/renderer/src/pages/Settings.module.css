@@ -24,6 +24,36 @@
   font-size: 1.1rem;
 }
 
+.tipCard {
+  display: flex;
+  gap: 16px;
+  background: linear-gradient(135deg, #34C75920 0%, #32AED920 100%);
+  border: 2px solid #34C75940;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 32px;
+  align-items: flex-start;
+}
+
+.tipIcon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.tipContent h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: var(--text-primary);
+}
+
+.tipContent p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
 .section {
   margin-bottom: 32px;
 }
@@ -98,6 +128,122 @@
   padding: 8px 12px 8px 28px;
   border-radius: 8px;
   color: var(--text-primary);
+  width: 150px;
+  transition: all 0.2s ease;
+}
+
+.practiceList {
+  margin-bottom: 24px;
+}
+
+.practiceItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.practiceItem:last-child {
+  border-bottom: none;
+}
+
+.practiceInfo {
+  flex: 1;
+}
+
+.practiceName {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.practiceDetails {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.practiceTin {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-family: 'Courier New', monospace;
+}
+
+.practiceActions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.activeBadge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #d1fae5;
+  color: #065f46;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.inactiveBadge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.deactivateBtn {
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #dc2626;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.deactivateBtn:hover {
+  background: #fee2e2;
+  border-color: #dc2626;
+}
+
+.addForm {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 16px;
+}
+
+.formTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.formGrid .input {
+  width: 100%;
+  padding: 10px 12px;
+}
+
+.formActions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
   font-family: var(--font-main);
   width: 120px;
   text-align: right;

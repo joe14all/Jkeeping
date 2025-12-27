@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.label {
+  font-size: 11px;
+  fill: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.dot {
+  transition: r 0.2s ease;
+  cursor: pointer;
+}
+
+.dot:hover {
+  r: 7;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: #9ca3af;
+  font-size: 14px;
+}

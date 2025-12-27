@@ -1,0 +1,262 @@
+.container {
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.search:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.filter {
+  padding: 10px 36px 10px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  transition: all 0.2s ease;
+}
+
+.filter:hover,
+.filter:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background: #f9fafb;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table th.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.table th.sortable:hover {
+  color: #3b82f6;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.table tbody tr.selected {
+  background: #eff6ff;
+}
+
+.table td {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #1f2937;
+}
+
+.checkboxCell {
+  width: 40px;
+  text-align: center;
+}
+
+.checkboxCell input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge.income {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge.expense {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badge.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge.cleared {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge.flagged {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.income {
+  color: #059669;
+  font-weight: 600;
+}
+
+.expense {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.editBtn,
+.deleteBtn,
+.saveBtn,
+.cancelBtn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.editBtn:hover {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.deleteBtn:hover {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.saveBtn {
+  background: #10b981;
+  color: white;
+}
+
+.saveBtn:hover {
+  background: #059669;
+}
+
+.cancelBtn {
+  background: #6b7280;
+  color: white;
+}
+
+.cancelBtn:hover {
+  background: #4b5563;
+}
+
+.editInput {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.editInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.summary {
+  display: flex;
+  gap: 32px;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.summaryItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.summaryLabel {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summaryValue {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+}

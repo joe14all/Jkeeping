@@ -1,0 +1,271 @@
+.container {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.titleGroup h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.totalBadge {
+  background: linear-gradient(135deg, #FF3B30 0%, #FF9500 100%);
+  color: white;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.totalBadge strong {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 4px;
+}
+
+.guideCard {
+  background: linear-gradient(135deg, #FFD60A20 0%, #FF950020 100%);
+  border: 2px solid #FFD60A40;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 32px;
+  display: flex;
+  gap: 20px;
+}
+
+.guideIcon {
+  font-size: 48px;
+  flex-shrink: 0;
+}
+
+.guideContent h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+}
+
+.guideContent p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.actionButtons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  justify-content: center;
+}
+
+.twoColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  color: var(--text-primary);
+}
+
+.categoryGuide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.categorySection {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.categorySection h4 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.categorySection ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.categorySection li {
+  font-size: 0.9rem;
+}
+
+.statsCard {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.statItem {
+  padding: 16px;
+  background: var(--bg-primary);
+  border-radius: 12px;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.form {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.inputGroup {
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.amountInput {
+  position: relative;
+}
+
+.dollarSign {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.amountInput .input {
+  padding-left: 36px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.transactionList {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--border);
+}
+
+.table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.table tbody tr:hover {
+  background: var(--bg-primary);
+}
+
+.amount {
+  font-weight: 700;
+  color: #FF3B30;
+  font-size: 1.1rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.emptyState p {
+  margin: 0;
+}
